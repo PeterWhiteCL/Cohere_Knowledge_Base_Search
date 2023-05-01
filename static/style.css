@@ -1,0 +1,92 @@
+/* Set body background color and font */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the search form */
+form#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+/* Style the search input and label */
+label[for="query"], input#query {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+input#query {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the number of results input and label */
+label[for="num-results"], input#num-results {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Style the search button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the loading message */
+#loading {
+  display: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#loading p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Style the search results */
+#results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
